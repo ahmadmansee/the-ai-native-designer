@@ -2,6 +2,8 @@
 
 Interactive HTML presentation, currently showing twenty-five slides. The talk is being rebuilt in small batches. Slides appear on one vertical page and use a 16:9 canvas on desktop.
 
+**Shareable presentation:** [ahmadmansee.github.io/the-ai-native-designer](https://ahmadmansee.github.io/the-ai-native-designer/)
+
 ## Preview locally
 
 ```bash
