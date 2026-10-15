@@ -1,0 +1,113 @@
+:root {
+  --brand-deep: #206068;
+  --brand-aqua: #18b2a8;
+  --brand-ink: #173f43;
+  --brand-line: #bfd5d4;
+  --brand-paper: #fbfcfb;
+}
+
+/* Cradis identity, adapted to the deck's 16:9 canvas. */
+.presentation { background: #f0f5f3; }
+.site-wordmark { color: var(--brand-deep); }
+.header-button { border-color: #bcd2d0; color: var(--brand-ink); }
+.header-button:hover, .header-button[aria-pressed="true"] { border-color: var(--brand-deep); background: #fff; }
+.slide { background: var(--brand-paper); }
+.slide::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: -7%;
+  top: 15%;
+  width: 34%;
+  height: 70%;
+  background: var(--brand-deep);
+  opacity: .012;
+  -webkit-mask: url('./assets/brand-mark-solid.svg') center / contain no-repeat;
+  mask: url('./assets/brand-mark-solid.svg') center / contain no-repeat;
+  pointer-events: none;
+}
+.brand-lockup {
+  position: absolute;
+  z-index: 9;
+  top: clamp(20px, 2.6vw, 40px);
+  right: clamp(38px, 5vw, 78px);
+  width: clamp(92px, 7.4vw, 118px);
+  height: auto;
+  pointer-events: none;
+}
+.slide-chrome { border-color: var(--brand-line); color: #678184; }
+.slide-index strong { color: var(--brand-deep); }
+.slide-index i { background: var(--brand-aqua); }
+.section-label { color: var(--brand-deep); }
+.speaker-notes { border-color: var(--brand-line); }
+:focus-visible { outline-color: var(--brand-aqua); }
+
+/* The cover and chapter pause borrow the deep-field treatment from the source slides. */
+.intro-slide {
+  background: var(--brand-deep);
+  color: #fff;
+}
+.intro-slide::before { width: 44%; height: 92%; top: 4%; left: -13%; background: #fff; opacity: .03; }
+.intro-slide .brand-lockup,
+.transition-slide .brand-lockup { filter: brightness(0) invert(1); }
+.intro-slide .intro-deck,
+.intro-slide .intro-credit span { color: #d8ece9; }
+.intro-slide .intro-portrait { border: 1px solid #ffffff61; background: #123f45; }
+.intro-slide .slide-chrome,
+.transition-slide .slide-chrome { border-color: #ffffff5e; color: #d3e7e4; }
+.intro-slide .slide-index strong,
+.transition-slide .slide-index strong { color: #fff; }
+.intro-slide .slide-index i,
+.transition-slide .slide-index i { background: var(--brand-aqua); }
+.history-teaser-slide::before { left: 4%; width: 30%; opacity: .018; }
+.slide#market-shift { background: var(--brand-aqua); color: #093d3b; }
+.slide#market-shift::before { background: #fff; opacity: .035; }
+.slide#market-shift .brand-lockup { filter: brightness(0); }
+.slide#market-shift .history-teaser-copy p,
+.slide#market-shift .slide-chrome { color: #195f5b; }
+.slide#market-shift .slide-chrome { border-color: #277d77; }
+.slide#market-shift .slide-index strong { color: #093d3b; }
+.slide#reality-check { background: var(--brand-deep); color: #fff; }
+.slide#reality-check::before { background: #fff; opacity: .035; }
+.slide#reality-check .brand-lockup { filter: brightness(0) invert(1); }
+.slide#reality-check .history-teaser-copy p,
+.slide#reality-check .slide-chrome { color: #d5e9e7; }
+.slide#reality-check .slide-chrome { border-color: #ffffff5e; }
+.slide#reality-check .slide-index strong { color: #fff; }
+.transition-slide { background: var(--brand-deep); color: #fff; }
+.transition-slide::before { width: 42%; height: 90%; top: 5%; left: -9%; background: #fff; opacity: .03; }
+.transition-slide .section-label { color: #cfebe7; }
+.transition-track-line { background: #a4cac7; }
+.transition-reveal { border-color: #c6e1dd; color: #fff; }
+
+/* Brand-colored interaction and diagram cues. */
+.diamond-v2-stage--1 { background: #327980; }
+.diamond-v2-stage--2 { background: var(--brand-deep); }
+.diamond-v2-stage--3 { background: var(--brand-aqua); color: #083e3d; }
+.diamond-v2-stage--4 { background: #0b716b; }
+.diamond-v2-outline--blue { stroke: #164d53; }
+.diamond-v2-outline--orange { stroke: #0a8179; }
+.tools-v2-stop:hover::before,
+.tools-v2-stop.is-active::before,
+.timeline-nav-item.is-active::before,
+.ms-pips button.is-active,
+.cr-option.is-active .cr-option-marker { background: var(--brand-deep); }
+.role-tabs button[aria-pressed="true"],
+.workflow-switch button[aria-pressed="true"],
+.fi-assistant-tabs button[aria-pressed="true"],
+.fi-shaped-tabs button[aria-pressed="true"],
+.career-repo-tabs button.is-active { border-color: var(--brand-deep); color: var(--brand-deep); }
+.dd-stage.is-active { background: var(--brand-deep); }
+.workflow-path li.is-shifted::before { background: var(--brand-aqua); }
+.career-path:hover, .career-path:focus-visible { background: #e9f2ef; }
+.career-repo-review { border-color: var(--brand-aqua); }
+.career-repo-activity span { border-color: #b6d7d2; background: #eff8f6; color: var(--brand-deep); }
+.ms-source a:hover, .ms-arrows button:hover, .fi-source:hover { color: var(--brand-deep); border-color: var(--brand-deep); }
+.presentation-controls { border-color: #b9d0ce; color: var(--brand-deep); }
+.presentation-controls button { color: var(--brand-deep); }
+
+@media (max-width: 700px) {
+  .brand-lockup { top: 21px; right: 24px; width: 76px; }
+  .slide::before { width: 65%; left: -25%; opacity: .01; }
+  .intro-slide::before, .transition-slide::before { opacity: .025; }
+}
