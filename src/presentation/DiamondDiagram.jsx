@@ -16,7 +16,6 @@ export function DiamondDiagram({ stages, activeId, onSelect, themes = ['Understa
             onFocus={() => onSelect(stage.id)}
             onClick={() => onSelect(stage.id)}
           >
-            <span>{index % 2 === 0 ? 'Diverge' : 'Converge'}</span>
             <strong>{stage.name}</strong>
           </button>
         ))}

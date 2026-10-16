@@ -141,7 +141,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .diamond-v2-stage--4 { background: #f1831d; clip-path: polygon(0 0, 100% 50%, 0 100%); }
 .diamond-v2-stage:not(.is-active) { filter: saturate(.82) brightness(.93); }
 .diamond-v2-stage:hover, .diamond-v2-stage.is-active { filter: saturate(1.1) brightness(1.04); }
-.diamond-v2-stage span { font-size: clamp(10px, .85vw, 14px); font-weight: 600; opacity: .8; }
 .diamond-v2-stage strong { font-size: clamp(17px, 1.55vw, 25px); font-weight: 700; letter-spacing: -.035em; }
 .diamond-v2-outline { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
 .diamond-v2-outline path { fill: none; stroke-width: 5; vector-effect: non-scaling-stroke; }
@@ -382,7 +381,6 @@ html:fullscreen { background: #f2f2f0; overflow: hidden; }
   .diamond-v2-themes { margin-bottom: 11px; font-size: 10px; }
   .diamond-v2-shape { height: 175px; }
   .diamond-v2-stage { gap: 4px; }
-  .diamond-v2-stage span { font-size: 8px; }
   .diamond-v2-stage strong { font-size: 11px; }
   .diamond-v2-outline path { stroke-width: 3; }
   .diamond-v2-story { width: 100%; min-height: 0; border-left: 0; border-top: 1px solid #ceced2; padding: 22px 0 0; }

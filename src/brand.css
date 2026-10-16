@@ -76,7 +76,8 @@
 /* Brand-colored interaction and diagram cues. */
 .diamond-v2-stage--1 { background: #327980; }
 .diamond-v2-stage--2 { background: var(--brand-deep); }
-.diamond-v2-stage--3 { background: var(--brand-aqua); color: #083e3d; }
+.diamond-v2-stage--3 { background: var(--brand-aqua); color: #fff; }
+.diamond-v2-stage--3:not(.is-active) { filter: saturate(.82); }
 .diamond-v2-stage--4 { background: #0b716b; }
 .diamond-v2-outline--blue { stroke: #164d53; }
 .diamond-v2-outline--orange { stroke: #0a8179; }

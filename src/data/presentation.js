@@ -31,7 +31,7 @@ export const slides = [
     headline: 'In this talk.',
     chapters: [
       { title: 'How we got here', target: 'how-we-got-here' },
-      { title: 'How the work is changing', target: 'working-earlier' },
+      { title: 'A new way of working', target: 'working-earlier' },
       { title: 'Signals from the market', target: 'market-shift' },
       { title: 'The reality inside companies', target: 'reality-check' },
       { title: 'Three directions for designers', target: 'ways-forward' },
@@ -169,8 +169,8 @@ export const slides = [
     id: 'working-earlier',
     number: '06',
     type: 'history-teaser',
-    chapter: 'How the work is changing',
-    headline: 'The work is changing.',
+    chapter: 'A new way of working',
+    headline: 'A new way of working',
     deck: 'We can build and test ideas sooner.',
     notes: [
       'Pause here, as with the earlier history slide. This marks the next section of the talk.',
@@ -267,9 +267,7 @@ export const slides = [
     number: '09',
     type: 'experiment-story',
     chapter: 'A connected workflow',
-    eyebrow: 'In practice',
-    headline: 'From context to canvas.',
-    caveat: 'Illustrative sequence · sample content',
+    headline: 'One idea. Four tools.',
     beats: [
       {
         id: 'granola',

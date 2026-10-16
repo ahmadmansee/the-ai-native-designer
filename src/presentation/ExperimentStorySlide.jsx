@@ -144,8 +144,7 @@ export function ExperimentStorySlide({ slide }) {
   function togglePreview() { setPlaying(false); setDelayed(value => !value); }
 
   return <SlideFrame slide={slide} className="cinema-slide">
-    <span className="section-label">{slide.eyebrow}</span>
-    <div className="cinema-heading"><h2 id={`${slide.id}-title`}>{slide.headline}</h2><span>{slide.caveat}</span></div>
+    <div className="cinema-heading"><h2 id={`${slide.id}-title`}>{slide.headline}</h2></div>
     <div className="cinema-stage" ref={stageRef} tabIndex={0} onKeyDown={event => { if (event.key === 'ArrowRight') next(); if (event.key === 'ArrowLeft') previous(); }} aria-label="Animated AI-native design workflow. Use left and right arrow keys to change frames.">
       <div className="cinema-stage-content" key={beat.id}>
         {beat.id === 'granola' && <GranolaScene onNext={next} />}
