@@ -49,21 +49,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .intro-portrait { width: 100%; aspect-ratio: 1; margin: 0; overflow: hidden; background: #d0d0d0; }
 .intro-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
-/* 02 — Context and provisional contents */
+/* 02 — Contents */
 .context-slide { background: #f9f9f7; }
-.context-layout { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(65px, 9vw, 150px); align-items: center; flex: 1; min-height: 0; }
-.context-copy h2 { max-width: 650px; margin: 28px 0 0; font-size: clamp(56px, 5.4vw, 87px); line-height: 1.04; font-weight: 600; letter-spacing: -.035em; }
-.context-statements { max-width: 560px; margin-top: clamp(50px, 6vw, 90px); padding-top: 22px; border-top: 1px solid #c8c8cc; }
-.context-statements p { max-width: 510px; margin: 0; font-size: clamp(19px, 1.45vw, 24px); line-height: 1.32; letter-spacing: -.035em; }
-.context-statements p + p { margin-top: 17px; color: #6e6e73; }
-.context-contents { padding-top: 30px; }
-.context-contents ol { list-style: none; padding: 0; margin: 20px 0 0; border-top: 1px solid #c8c8cc; }
+.context-layout { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: clamp(65px, 9vw, 150px); align-items: center; flex: 1; min-height: 0; }
+.context-copy h2 { max-width: 650px; margin: 0; font-size: clamp(56px, 5.4vw, 87px); line-height: 1.04; font-weight: 600; letter-spacing: -.035em; }
+.context-contents ol { list-style: none; padding: 0; margin: 0; border-top: 1px solid #c8c8cc; }
 .context-contents li { display: grid; grid-template-columns: 54px 1fr; align-items: baseline; gap: 10px; padding: clamp(12px, 1.2vw, 19px) 0; border-bottom: 1px solid #dedee0; }
 .context-contents li > span { color: #1d1d1f; font-size: 14px; font-weight: 600; }
-.context-contents li > a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; color: #54545a; font-size: clamp(18px, 1.4vw, 22px); letter-spacing: -.035em; text-decoration: none; }
-.context-contents li > a span { flex: none; color: #a1a1a5; font-size: 17px; }
+.context-contents li > a { color: #54545a; font-size: clamp(18px, 1.4vw, 22px); letter-spacing: -.035em; text-decoration: none; }
 .context-contents li > a:hover { color: #206068; }
-.context-contents li > a:hover span { color: #206068; }
 
 /* 03 — Section opening */
 .history-teaser-slide { background: #fff; }
@@ -376,15 +370,9 @@ html:fullscreen { background: #f2f2f0; overflow: hidden; }
   .intro-portrait { width: min(100%, 300px); justify-self: end; }
   .context-slide { min-height: 850px; }
   .context-layout { grid-template-columns: 1fr; gap: 42px; align-content: center; padding-top: 44px; }
-  .context-copy h2 { margin-top: 22px; font-size: clamp(46px, 11vw, 64px); }
-  .context-statements { margin-top: 33px; padding-top: 16px; }
-  .context-statements p { font-size: 18px; }
-  .context-statements p + p { margin-top: 12px; }
-  .context-contents { padding-top: 0; }
-  .context-contents ol { margin-top: 13px; }
+  .context-copy h2 { font-size: clamp(46px, 11vw, 64px); }
   .context-contents li { grid-template-columns: 45px 1fr; padding: 12px 0; }
   .context-contents li span:first-child { font-size: 12px; }
-  .context-contents li span:last-child { font-size: 16px; }
   .diamond-v2-slide { min-height: 880px; }
   .diamond-v2-heading { display: block; margin-top: 44px; }
   .diamond-v2-heading h2 { font-size: clamp(43px, 10.8vw, 61px); }

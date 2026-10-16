@@ -27,14 +27,8 @@ export const slides = [
     id: 'context',
     number: '02',
     type: 'context',
-    chapter: 'Context and contents',
-    eyebrow: 'Context',
-    headline: 'A note before we start.',
-    statements: [
-      'This presentation is based on my personal experience.',
-      'Tools and information may change over time.',
-    ],
-    contentsLabel: 'In this talk',
+    chapter: 'Contents',
+    headline: 'In this talk.',
     chapters: [
       { title: 'How we got here', target: 'how-we-got-here' },
       { title: 'How the work is changing', target: 'working-earlier' },
@@ -45,9 +39,7 @@ export const slides = [
       { title: 'Closing & resources', target: 'closing' },
     ],
     notes: [
-      'Tell the audience that the talk reflects your own experience and judgment, not a universal path for every designer.',
-      'Mention that tools and examples change quickly, so some details may evolve after the presentation.',
-      'The chapter list follows the talk as it stands now. Use it to show the audience where the story is going.',
+      'Introduce the seven chapters, then move into the first section.',
     ],
   },
   {
