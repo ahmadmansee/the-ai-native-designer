@@ -7,7 +7,6 @@ export function RoleShiftSlide({ slide }) {
 
   return (
     <SlideFrame slide={slide} className="role-slide">
-      <span className="section-label">{slide.eyebrow}</span>
       <h2 id={`${slide.id}-title`}>{slide.headline}</h2>
       <div className="role-tabs" role="group" aria-label="Explore the roles">
         {slide.roles.map(item => <button key={item.id} type="button" aria-pressed={item.id === roleId} onClick={() => setRoleId(item.id)}>{item.label}</button>)}

@@ -170,9 +170,8 @@ export const slides = [
     number: '06',
     type: 'history-teaser',
     chapter: 'How the work is changing',
-    eyebrow: '02 / How the work is changing',
     headline: 'The work is changing.',
-    deck: 'We can try ideas in a working version much earlier.',
+    deck: 'We can build and test ideas sooner.',
     notes: [
       'Pause here, as with the earlier history slide. This marks the next section of the talk.',
       'Introduce the shift in your own words: designers can sometimes work with a functioning version earlier and participate closer to implementation.',
@@ -184,7 +183,6 @@ export const slides = [
     number: '07',
     type: 'role-shift',
     chapter: 'The changing role',
-    eyebrow: 'The role',
     headline: 'Closer to the product.',
     roles: [
       {
@@ -212,7 +210,6 @@ export const slides = [
     number: '08',
     type: 'ai-native-diamond',
     chapter: 'The AI-native workflow',
-    eyebrow: 'Our working model',
     headline: 'The AI-native design loop.',
     stages: [
       {

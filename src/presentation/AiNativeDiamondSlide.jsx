@@ -9,7 +9,6 @@ export function AiNativeDiamondSlide({ slide }) {
 
   return (
     <SlideFrame slide={slide} className="ai-diamond-slide">
-      <span className="section-label">{slide.eyebrow}</span>
       <div className="ai-diamond-heading">
         <h2 id={`${slide.id}-title`}>{slide.headline}</h2>
       </div>
