@@ -9,6 +9,7 @@ export function ToolHistorySlide({ slide }) {
     <SlideFrame slide={slide} className="tools-v2-slide">
       <div className="tools-v2-heading">
         <h2 id={`${slide.id}-title`}>{slide.headline}</h2>
+        <p>{slide.overview}</p>
       </div>
 
       <div className="tools-v2-reveal" aria-live="polite">
@@ -27,9 +28,7 @@ export function ToolHistorySlide({ slide }) {
               <p>{selected.detail}</p>
             </div>
           </div>
-        ) : (
-          <p className="tools-v2-overview">{slide.overview}</p>
-        )}
+        ) : null}
       </div>
 
       <div className="tools-v2-timeline" aria-label="Interactive timeline of design tools">

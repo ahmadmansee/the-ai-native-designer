@@ -32,7 +32,7 @@ export const slides = [
     chapters: [
       { title: 'How we got here', target: 'how-we-got-here' },
       { title: 'A new way of working', target: 'working-earlier' },
-      { title: 'Signals from the market', target: 'market-shift' },
+      { title: 'Design jobs today', target: 'market-shift' },
       { title: 'The reality inside companies', target: 'reality-check' },
       { title: 'Three directions for designers', target: 'ways-forward' },
       { title: 'The future interface', target: 'future-interface' },
@@ -103,7 +103,7 @@ export const slides = [
     type: 'tool-history',
     chapter: 'The tools',
     headline: 'Design tools.',
-    overview: 'From print and pixels to shared files and code.',
+    overview: 'From graphics to interfaces to code.',
     footnote: 'Dates mark product milestones, not when I used each tool.',
     eras: [
       {
@@ -267,7 +267,7 @@ export const slides = [
     number: '09',
     type: 'experiment-story',
     chapter: 'A connected workflow',
-    headline: 'One idea. Four tools.',
+    headline: 'From feedback to a working prototype.',
     beats: [
       {
         id: 'granola',
@@ -307,9 +307,7 @@ export const slides = [
     number: '10',
     type: 'practical-use-cases',
     chapter: 'Practical uses',
-    eyebrow: 'A few examples',
-    headline: 'Three useful starting points.',
-    caveat: 'Illustrative examples',
+    headline: 'AI use cases.',
     examples: [
       {
         id: 'references',
@@ -338,9 +336,8 @@ export const slides = [
     id: 'market-shift',
     number: '11',
     type: 'history-teaser',
-    chapter: 'Signals from the market',
-    eyebrow: '03 / Signals from the market',
-    headline: 'This is happening now.',
+    chapter: 'Design jobs today',
+    headline: 'Design jobs today',
     deck: 'You can already see it in job ads and in how some teams work.',
     notes: [
       'Move from possible workflows to present-day signals. These are examples of change, not a claim that every company or designer works this way.',
@@ -352,8 +349,7 @@ export const slides = [
     number: '12',
     type: 'market-signals',
     chapter: 'The market now',
-    eyebrow: 'Market signals',
-    headline: 'In job ads. In the work.',
+    headline: 'Job ads and real workflows.',
     notes: [
       'Move through the four examples manually. The first is Ahmad’s untouched LinkedIn screenshot of a HelloFresh freelance Senior Product Designer post captured on 10 October 2026. The post lists craft, systems thinking, and AI-native as must-haves; a visible comment asks what AI-native means in practice.',
       'The second original screenshot, also supplied by Ahmad on 10 October 2026, shows a LinkedIn jobs list with AI-native and AI experience design titles. The listed jobs are a captured example, not a count of current vacancies.',

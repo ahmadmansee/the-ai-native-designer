@@ -125,5 +125,5 @@ export function PracticalUseCasesSlide({ slide }) {
     if (slideRef.current) observer.observe(slideRef.current);
     return () => observer.disconnect();
   }, []);
-  return <SlideFrame slide={slide} className="uc-slide"><span className="section-label">{slide.eyebrow}</span><div className="uc-heading"><h2 id={`${slide.id}-title`}>{slide.headline}</h2><span>{slide.caveat}</span></div><div className="uc-grid" ref={slideRef}>{slide.examples.map((example, index) => <DemoPanel example={example} index={index} visible={visible} key={example.id} />)}</div></SlideFrame>;
+  return <SlideFrame slide={slide} className="uc-slide"><div className="uc-heading"><h2 id={`${slide.id}-title`}>{slide.headline}</h2></div><div className="uc-grid" ref={slideRef}>{slide.examples.map((example, index) => <DemoPanel example={example} index={index} visible={visible} key={example.id} />)}</div></SlideFrame>;
 }

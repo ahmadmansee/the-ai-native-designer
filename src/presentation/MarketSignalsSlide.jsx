@@ -68,8 +68,7 @@ export function MarketSignalsSlide({ slide }) {
     return () => document.removeEventListener('keydown', onKey);
   }, [zoomed]);
   return <SlideFrame slide={slide} className="market-signals-slide">
-    <span className="section-label">{slide.eyebrow}</span>
-    <div className="ms-heading"><h2 id={`${slide.id}-title`}>{slide.headline}</h2><span>Four examples · October 2026</span></div>
+    <div className="ms-heading"><h2 id={`${slide.id}-title`}>{slide.headline}</h2></div>
     <div className="ms-carousel" tabIndex={0} aria-label="Market evidence carousel. Use left and right arrows to change examples." onKeyDown={event => { if (event.key === 'ArrowRight') { event.preventDefault(); move(1); } if (event.key === 'ArrowLeft') { event.preventDefault(); move(-1); } }} onTouchStart={event => { startX.current = event.touches[0].clientX; }} onTouchEnd={event => { if (startX.current === null) return; const delta = event.changedTouches[0].clientX - startX.current; if (Math.abs(delta) > 50) move(delta < 0 ? 1 : -1); startX.current = null; }}>
       <div className="ms-stage" key={current.id}>
         <div className="ms-visual"><EvidenceVisual source={current} onZoom={() => setZoomed(true)} /></div>
