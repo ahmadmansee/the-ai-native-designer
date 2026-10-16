@@ -267,7 +267,7 @@ export const slides = [
     number: '09',
     type: 'experiment-story',
     chapter: 'A connected workflow',
-    headline: 'From feedback to a working prototype.',
+    headline: 'A delayed order, redesigned step by step.',
     beats: [
       {
         id: 'granola',
@@ -321,8 +321,8 @@ export const slides = [
       },
       {
         id: 'rehearsal',
-        title: 'Rehearse a flow',
-        prompt: 'Walk through adding a payment method as a first-time customer.',
+        title: 'Prepare a user test',
+        prompt: 'Walk through adding a payment method. What should we check with real users?',
       },
     ],
     notes: [
@@ -363,7 +363,7 @@ export const slides = [
     number: '13',
     type: 'fomo',
     chapter: 'The market now',
-    headline: 'The feed is not a roadmap.',
+    headline: 'The pressure to keep up.',
     notes: [
       'These are real public YouTube thumbnails and titles, shown as examples of the rhetoric designers encounter online. Do not present the claims as facts. Click a thumbnail to open its original video.',
       'Sources: Figma Is Dead https://www.youtube.com/watch?v=iaASVi-cFGk ; Vibe Coding Is The Future https://www.youtube.com/watch?v=IACHfKmZMr8 ; AI Will Replace These Designers https://www.youtube.com/watch?v=5x-JzSkrdrI',
@@ -375,8 +375,7 @@ export const slides = [
     number: '14',
     type: 'history-teaser',
     chapter: 'The reality inside companies',
-    eyebrow: '04 / The reality inside companies',
-    headline: 'At work, it gets more complicated.',
+    headline: 'The reality inside companies.',
     deck: 'A useful new tool still needs time, budget, and approval.',
     notes: [
       'This is a pause after the market and FOMO examples. A job ad or a compelling demo does not tell you what is allowed inside your own company.',
@@ -388,8 +387,7 @@ export const slides = [
     number: '15',
     type: 'company-reality',
     chapter: 'Reality check',
-    eyebrow: 'Inside a company',
-    headline: 'A good idea can still get stuck.',
+    headline: 'Why AI isn’t always possible at work.',
     constraints: [
       {
         id: 'budget',
@@ -423,7 +421,6 @@ export const slides = [
     number: '16',
     type: 'paths-intro',
     chapter: 'Three directions for designers',
-    eyebrow: '05 / Three directions for designers',
     headline: 'Three directions for designers.',
     deck: 'You can grow within a team, join one early, or build something of your own.',
     paths: [

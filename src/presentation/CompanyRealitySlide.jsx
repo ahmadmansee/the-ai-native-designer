@@ -43,7 +43,6 @@ export function CompanyRealitySlide({ slide }) {
   const active = slide.constraints.find(item => item.id === activeId) ?? slide.constraints[0];
 
   return <SlideFrame slide={slide} className="company-reality-slide">
-    <span className="section-label">{slide.eyebrow}</span>
     <h2 id={`${slide.id}-title`}>{slide.headline}</h2>
     <div className="cr-visual-grid" role="group" aria-label="Four possible constraints at work">
       {slide.constraints.map(item => <button

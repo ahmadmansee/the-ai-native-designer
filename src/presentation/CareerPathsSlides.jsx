@@ -47,7 +47,6 @@ function PathDrawing({ id }) {
 
 export function PathsIntroSlide({ slide }) {
   return <SlideFrame slide={slide} className="career-intro-slide">
-    <span className="section-label">{slide.eyebrow}</span>
     <h2 id={`${slide.id}-title`}>{slide.headline}</h2>
     <p className="career-intro-deck">{slide.deck}</p>
     <div className="career-paths" aria-label="Three directions for designers">
