@@ -8,7 +8,6 @@ function SourceLink({ source, children }) {
 
 export function FutureIntroSlide({ slide }) {
   return <SlideFrame slide={slide} className="fi-intro-slide">
-    <span className="section-label">{slide.eyebrow}</span>
     <div className="fi-intro-layout">
       <div className="fi-intro-copy">
         <h2 id={`${slide.id}-title`}>{slide.headline}</h2>

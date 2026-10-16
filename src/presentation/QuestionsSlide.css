@@ -1,0 +1,5 @@
+.questions-slide { background: #f8fbfa; }
+.questions-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: center; gap: clamp(35px, 6vw, 95px); flex: 1; min-height: 0; }
+.questions-layout h2 { margin: 0; font-size: clamp(100px, 10vw, 170px); line-height: .95; letter-spacing: -.055em; font-weight: 600; }
+.questions-art { display: block; justify-self: end; width: min(100%, 620px); height: auto; max-height: min(67vh, 600px); }
+@media (max-width: 900px) { .questions-layout { grid-template-columns: 1fr 1fr; gap: 20px; } .questions-layout h2 { font-size: clamp(68px, 9vw, 100px); } }

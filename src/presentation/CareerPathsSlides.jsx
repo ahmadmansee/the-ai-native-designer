@@ -48,7 +48,6 @@ function PathDrawing({ id }) {
 export function PathsIntroSlide({ slide }) {
   return <SlideFrame slide={slide} className="career-intro-slide">
     <h2 id={`${slide.id}-title`}>{slide.headline}</h2>
-    <p className="career-intro-deck">{slide.deck}</p>
     <div className="career-paths" aria-label="Three directions for designers">
       {slide.paths.map(path => <a className={`career-path career-path--${path.id}`} href={`#${path.target}`} key={path.id}>
         <div className="career-path-top"><span>{path.number}</span><PathDrawing id={path.id} /></div>

@@ -17,8 +17,9 @@ import { MarketSignalsSlide } from './MarketSignalsSlide.jsx';
 import { FomoSlide } from './FomoSlide.jsx';
 import { CompanyRealitySlide } from './CompanyRealitySlide.jsx';
 import { PathsIntroSlide, CompanyPathSlide, FoundingPathSlide, SoloCaseSlide } from './CareerPathsSlides.jsx';
-import { FutureIntroSlide, FutureConversationSlide, FutureAssistantSlide, FuturePersonalAppSlide, FutureShapedAppSlide } from './FutureInterfaceSlides.jsx';
+import { FutureIntroSlide, FutureConversationSlide, FutureAssistantSlide, FuturePersonalAppSlide } from './FutureInterfaceSlides.jsx';
 import { ResourcesSlide } from './ResourcesSlide.jsx';
+import { QuestionsSlide } from './QuestionsSlide.jsx';
 
 const components = {
   introduction: IntroductionSlide,
@@ -45,8 +46,8 @@ const components = {
   'future-conversation': FutureConversationSlide,
   'future-assistant': FutureAssistantSlide,
   'future-personal-app': FuturePersonalAppSlide,
-  'future-shaped-app': FutureShapedAppSlide,
   resources: ResourcesSlide,
+  questions: QuestionsSlide,
 };
 
 function indexFromHash() {

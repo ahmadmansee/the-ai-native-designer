@@ -3,7 +3,7 @@ export const presentation = {
   subtitle: 'How AI is changing the tools we use and the way we work.',
   language: 'en',
   direction: 'ltr',
-  edition: 'Working draft · Slides 01–27',
+  edition: 'Working draft · Slides 01–28',
 };
 
 export const slides = [
@@ -33,9 +33,9 @@ export const slides = [
       { title: 'How we got here', target: 'how-we-got-here' },
       { title: 'A new way of working', target: 'working-earlier' },
       { title: 'Design jobs today', target: 'market-shift' },
-      { title: 'The reality inside companies', target: 'reality-check' },
+      { title: 'Reality check', target: 'reality-check' },
       { title: 'Three directions for designers', target: 'ways-forward' },
-      { title: 'The future interface', target: 'future-interface' },
+      { title: 'The future interface', target: 'future-interface-intro' },
       { title: 'Closing & resources', target: 'closing' },
     ],
     notes: [
@@ -267,7 +267,7 @@ export const slides = [
     number: '09',
     type: 'experiment-story',
     chapter: 'A connected workflow',
-    headline: 'A delayed order, redesigned step by step.',
+    headline: 'Feature shipping workflow.',
     beats: [
       {
         id: 'granola',
@@ -374,8 +374,8 @@ export const slides = [
     id: 'reality-check',
     number: '14',
     type: 'history-teaser',
-    chapter: 'The reality inside companies',
-    headline: 'The reality inside companies.',
+    chapter: 'Reality check',
+    headline: 'Reality check.',
     deck: 'A useful new tool still needs time, budget, and approval.',
     notes: [
       'This is a pause after the market and FOMO examples. A job ad or a compelling demo does not tell you what is allowed inside your own company.',
@@ -422,7 +422,6 @@ export const slides = [
     type: 'paths-intro',
     chapter: 'Three directions for designers',
     headline: 'Three directions for designers.',
-    deck: 'You can grow within a team, join one early, or build something of your own.',
     paths: [
       { id: 'company', number: '01', label: 'In-house designer', detail: 'Improve a product with your team.', target: 'path-company' },
       { id: 'founding', number: '02', label: 'Founding designer', detail: 'Shape a product from day one.', target: 'path-founding' },
@@ -520,11 +519,22 @@ export const slides = [
     ],
   },
   {
-    id: 'future-interface',
+    id: 'future-interface-intro',
     number: '21',
+    type: 'history-teaser',
+    chapter: 'The future interface',
+    headline: 'The future interface.',
+    deck: 'How might we use software next?',
+    notes: [
+      'Introduce this as a set of possibilities, not a prediction that every app will disappear.',
+      'The next slides look at interfaces that respond to a request, assistants that act across apps, and software built for one person.',
+    ],
+  },
+  {
+    id: 'future-interface',
+    number: '22',
     type: 'future-intro',
     chapter: 'The future interface',
-    eyebrow: '06 / The future interface',
     headline: 'What comes after the app?',
     deck: 'We may ask for what we need, let an assistant handle a task, or make a tool of our own.',
     image: 'assets/evidence/future-interface/assistant-reference-ahmad.jpeg',
@@ -536,7 +546,7 @@ export const slides = [
   },
   {
     id: 'conversation-to-interface',
-    number: '22',
+    number: '23',
     type: 'future-conversation',
     chapter: 'The future interface',
     eyebrow: '01 / Conversation',
@@ -556,7 +566,7 @@ export const slides = [
   },
   {
     id: 'assistant-across-apps',
-    number: '23',
+    number: '24',
     type: 'future-assistant',
     chapter: 'The future interface',
     eyebrow: '02 / Assistants',
@@ -591,7 +601,7 @@ export const slides = [
   },
   {
     id: 'software-for-one',
-    number: '24',
+    number: '25',
     type: 'future-personal-app',
     chapter: 'The future interface',
     eyebrow: '03 / Personal software',
@@ -608,28 +618,6 @@ export const slides = [
       'This is Julie Zhuo’s actual Mog Squad interface from her September 2026 article; she explicitly says the data shown is not real. The image is the original animated GIF she published.',
       'She ran several agents across projects and wanted a single view that worked on mobile and desktop. Her own tool put Claude and Codex sessions together in a layout tailored to her habits.',
       'The lesson is not that everyone should build a replacement for every app. A tool for a very small audience can be worthwhile when the workflow is specific and repeated often.',
-    ],
-  },
-  {
-    id: 'software-you-shape',
-    number: '25',
-    type: 'future-shaped-app',
-    chapter: 'The future interface',
-    eyebrow: '03 / Personal software',
-    headline: 'Make it yours.',
-    deck: 'A reading app built around her children’s own stories and interests.',
-    examples: [
-      { id: 'read', label: 'Read', image: 'assets/evidence/future-interface/family-reading-story.gif', alt: 'Two mobile screens from Julie Zhuo’s reading app showing a personalized story and comprehension question' },
-      { id: 'respond', label: 'Respond', image: 'assets/evidence/future-interface/family-reading-feedback.gif', alt: 'Mobile screen from Julie Zhuo’s reading app showing a follow-up question and answer feedback' },
-    ],
-    source: {
-      label: 'Julie Zhuo · personal reading app',
-      url: 'https://lg.substack.com/p/i-never-want-to-use-third-party-software',
-    },
-    notes: [
-      'Julie Zhuo also built a math and reading app for her children. The stories draw on their real interests and experiences; the children can give feedback about difficulty and request topics. The GIFs are from her original article.',
-      'This is a real example of a very small audience shaping the content and experience of software. The broader idea of a travel or food app whose layout users can remake is still speculative, so leave that as a spoken question rather than a factual product example.',
-      'Ask the audience what they would change in an app they use every day if it took only a short time to make it fit them.',
     ],
   },
   {
@@ -654,15 +642,27 @@ export const slides = [
     eyebrow: 'Further reading and watching',
     headline: 'A few places to start.',
     resources: [
-      { name: 'Julie Zhuo', kind: 'Read', detail: 'Essays on design, management, and personal software.', url: 'https://lg.substack.com/p/i-never-want-to-use-third-party-software' },
-      { name: 'How I AI', kind: 'Watch', detail: 'Claire Vo talks with people about how they use AI at work.', url: 'https://www.youtube.com/@howiaipodcast' },
-      { name: 'Sneak Peek', kind: 'Watch', detail: 'Designers show how their teams actually work.', url: 'https://www.youtube.com/@sneakpeekdesign' },
-      { name: 'UI Collective', kind: 'Watch', detail: 'Practical lessons on UI, design systems, and tools.', url: 'https://www.youtube.com/@UICollectiveDesign' },
+      { name: 'Julie Zhuo', kind: 'Read', detail: 'Essays on design and personal software.', image: 'assets/resources/julie-zhuo.jpg', imageAlt: 'Cover image from Julie Zhuo’s personal software essay', url: 'https://lg.substack.com/p/i-never-want-to-use-third-party-software' },
+      { name: 'How I AI', kind: 'Watch', detail: 'Real AI workflows with Claire Vo.', image: 'assets/resources/how-i-ai.jpg', imageAlt: 'Video thumbnail from the How I AI YouTube channel', url: 'https://www.youtube.com/@howiaipodcast' },
+      { name: 'Sneak Peek', kind: 'Watch', detail: 'Inside design teams and their files.', image: 'assets/resources/sneak-peek.jpg', imageAlt: 'Video thumbnail from the Sneak Peek YouTube channel', url: 'https://www.youtube.com/@sneakpeekdesign' },
+      { name: 'UI Collective', kind: 'Watch', detail: 'Design systems and UI lessons.', image: 'assets/resources/ui-collective.jpg', imageAlt: 'Video thumbnail from the UI Collective YouTube channel', url: 'https://www.youtube.com/@UICollectiveDesign' },
     ],
     notes: [
       'Julie Zhuo is the designer and writer behind the personal software examples shown earlier. The link opens the article used in this talk.',
       'How I AI is Claire Vo’s interview channel. Sneak Peek features walkthroughs of real design-team workflows. UI Collective covers interface design and design systems.',
       'These are starting points, not a required reading list. Choose the material that helps with a problem you are working on.',
+      'The four preview images are sourced from the linked Julie Zhuo article and from videos listed on each named YouTube channel, checked 16 October 2026. The links open the article or channel, not necessarily the pictured video.',
+    ],
+  },
+  {
+    id: 'questions',
+    number: '28',
+    type: 'questions',
+    chapter: 'Closing',
+    headline: 'Questions?',
+    notes: [
+      'Pause here and invite questions from the room.',
+      'If discussion needs a prompt, ask which part of the workflow people would try or challenge first.',
     ],
   },
 ];
