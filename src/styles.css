@@ -40,8 +40,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .intro-slide { background: #f9f9f7; }
 .intro-layout { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(330px, .85fr); align-items: center; gap: clamp(40px, 5vw, 90px); flex: 1; min-height: 0; }
 .intro-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
-.intro-copy h1 { margin: 0; font-size: clamp(65px, 6.5vw, 106px); line-height: .98; font-weight: 600; letter-spacing: -.076em; white-space: nowrap; }
-.intro-copy h1 em { font-weight: 600; }
+.intro-copy h1 { margin: 0; font-size: clamp(65px, 6.5vw, 106px); line-height: 1.05; font-weight: 600; letter-spacing: -.035em; white-space: nowrap; }
+.intro-copy h1 span { font-weight: 600; }
 .intro-copy .intro-deck { max-width: 650px; margin: clamp(32px, 4vw, 62px) 0 0; color: #55555a; font-size: clamp(20px, 1.65vw, 27px); line-height: 1.32; letter-spacing: -.035em; }
 .intro-credit { display: flex; flex-direction: column; gap: 4px; margin-top: clamp(45px, 5vw, 82px); }
 .intro-credit strong { font-size: clamp(16px, 1.2vw, 19px); font-weight: 600; letter-spacing: -.025em; }

@@ -5,7 +5,7 @@ export function IntroductionSlide({ slide }) {
     <SlideFrame slide={slide} className="intro-slide">
       <div className="intro-layout">
         <div className="intro-copy">
-          <h1 id={`${slide.id}-title`}>{slide.headline[0]} <em>{slide.headline[1]}</em><br />{slide.headline[2]}</h1>
+          <h1 id={`${slide.id}-title`}>{slide.headline[0]} <span>{slide.headline[1]}</span><br />{slide.headline[2]}</h1>
           <p className="intro-deck">{slide.deck}</p>
           <div className="intro-credit">
             <strong>{slide.speaker}</strong>
