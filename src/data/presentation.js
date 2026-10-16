@@ -1,6 +1,6 @@
 export const presentation = {
   title: 'The AI-Native Designer',
-  subtitle: 'How the evolution of tools is reshaping what designers make, how they work, and what comes next.',
+  subtitle: 'How AI is changing the tools we use and the way we work.',
   language: 'en',
   direction: 'ltr',
   edition: 'Working draft · Slides 01–27',
@@ -13,7 +13,7 @@ export const slides = [
     type: 'introduction',
     chapter: 'Introduction',
     headline: ['The', 'AI-Native', 'Designer.'],
-    deck: 'How the evolution of tools is reshaping what designers make, how they work, and what comes next.',
+    deck: 'How AI is changing the tools we use and the way we work.',
     speaker: 'Ahmad Mansee',
     role: 'Lead Product Designer',
     portrait: 'assets/portraits/ahmad-mansee.jpeg',
