@@ -61,6 +61,23 @@ export function App() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(indexFromHash);
   const hasPresented = useRef(false);
 
+  useEffect(() => {
+    if (presentationMode) return undefined;
+
+    const scrollToHash = () => {
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      if (!id) return;
+      setActiveSlideIndex(indexFromHash());
+      requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView({ block: 'start', behavior: 'auto' });
+      });
+    };
+
+    scrollToHash();
+    window.addEventListener('hashchange', scrollToHash);
+    return () => window.removeEventListener('hashchange', scrollToHash);
+  }, [presentationMode]);
+
   function goToSlide(index) {
     const next = Math.min(slides.length - 1, Math.max(0, index));
     setActiveSlideIndex(next);
