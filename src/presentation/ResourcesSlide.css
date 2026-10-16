@@ -1,0 +1,20 @@
+.resources-slide { background: #fbfcfb; }
+.resources-slide h2 { margin: clamp(20px, 2.5vw, 38px) 0 0; font-size: clamp(60px, 5.7vw, 91px); line-height: 1.02; font-weight: 600; letter-spacing: -.035em; }
+.resources-list { list-style: none; margin: clamp(30px, 3vw, 48px) 0 0; padding: 0; border-top: 1px solid #bdd3d1; }
+.resources-list li { display: grid; grid-template-columns: 48px 85px minmax(0, 1fr); align-items: baseline; gap: clamp(18px, 2vw, 32px); border-bottom: 1px solid #d2dfdc; padding: clamp(17px, 1.5vw, 24px) 0; }
+.resource-number, .resource-kind { color: #688082; font-size: 13px; font-weight: 500; }
+.resources-list a { display: grid; grid-template-columns: minmax(220px, .75fr) minmax(0, 1fr) 24px; align-items: baseline; gap: 20px; text-decoration: none; }
+.resources-list a strong { color: #1d1d1f; font-size: clamp(28px, 2.5vw, 40px); line-height: 1.06; font-weight: 600; letter-spacing: -.035em; }
+.resources-list a > span:not(.resource-arrow) { max-width: 440px; color: #5f696a; font-size: clamp(15px, 1.22vw, 19px); line-height: 1.28; }
+.resources-list a .resource-arrow { color: #206068; font-size: 23px; text-align: right; }
+.resources-list a:hover strong { color: #206068; }
+.resources-list a:hover .resource-arrow { transform: translate(2px, -2px); }
+.resource-arrow { transition: transform .18s ease; }
+
+@media (max-width: 900px) {
+  .resources-list li { grid-template-columns: 32px 60px minmax(0, 1fr); gap: 12px; }
+  .resources-list a { grid-template-columns: minmax(0, 1fr) 24px; gap: 5px 10px; }
+  .resources-list a strong { grid-column: 1; }
+  .resources-list a > span:not(.resource-arrow) { grid-column: 1; }
+  .resources-list a .resource-arrow { grid-column: 2; grid-row: 1 / 3; }
+}

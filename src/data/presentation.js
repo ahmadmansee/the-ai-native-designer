@@ -3,7 +3,7 @@ export const presentation = {
   subtitle: 'How the evolution of tools is reshaping what designers make, how they work, and what comes next.',
   language: 'en',
   direction: 'ltr',
-  edition: 'Working draft · Slides 01–25',
+  edition: 'Working draft · Slides 01–27',
 };
 
 export const slides = [
@@ -36,16 +36,18 @@ export const slides = [
     ],
     contentsLabel: 'In this talk',
     chapters: [
-      'Chapter title to come',
-      'Chapter title to come',
-      'Chapter title to come',
-      'Chapter title to come',
-      'Chapter title to come',
+      { title: 'How we got here', target: 'how-we-got-here' },
+      { title: 'How the work is changing', target: 'working-earlier' },
+      { title: 'Signals from the market', target: 'market-shift' },
+      { title: 'The reality inside companies', target: 'reality-check' },
+      { title: 'Three directions for designers', target: 'ways-forward' },
+      { title: 'The future interface', target: 'future-interface' },
+      { title: 'Resources', target: 'resources' },
     ],
     notes: [
       'Tell the audience that the talk reflects your own experience and judgment, not a universal path for every designer.',
       'Mention that tools and examples change quickly, so some details may evolve after the presentation.',
-      'The five chapter names are placeholders. Replace them as the story takes shape slide by slide.',
+      'The chapter list follows the talk as it stands now. Use it to show the audience where the story is going.',
     ],
   },
   {
@@ -185,7 +187,7 @@ export const slides = [
     chapter: 'The work today',
     eyebrow: 'Looking ahead',
     headline: 'The work is changing.',
-    deck: 'What we make. How we test it. Where designers contribute.',
+    deck: 'We can try ideas in a working version much earlier.',
     notes: [
       'Pause here, as with the earlier Looking back slide. This marks the next section of the talk.',
       'Introduce the shift in your own words: designers can sometimes work with a functioning version earlier and participate closer to implementation.',
@@ -359,7 +361,7 @@ export const slides = [
     chapter: 'The market now',
     eyebrow: '',
     headline: 'This is happening now.',
-    deck: 'In hiring. In teams. In the work.',
+    deck: 'You can already see it in job ads and in how some teams work.',
     notes: [
       'Move from possible workflows to present-day signals. These are examples of change, not a claim that every company or designer works this way.',
       'Let the next slide supply the evidence rather than listing tools or predictions here.',
@@ -398,8 +400,8 @@ export const slides = [
     type: 'history-teaser',
     chapter: 'Reality check',
     eyebrow: '',
-    headline: 'Now, the reality check.',
-    deck: 'Wanting to use AI at work does not mean you can.',
+    headline: 'At work, it gets more complicated.',
+    deck: 'A useful new tool still needs time, budget, and approval.',
     notes: [
       'This is a pause after the market and FOMO examples. A job ad or a compelling demo does not tell you what is allowed inside your own company.',
       'Speak from experience here. Do not frame limited access as a personal failure or suggest that every company should adopt the same tools.',
@@ -447,7 +449,7 @@ export const slides = [
     chapter: 'Ways forward',
     eyebrow: 'What comes next',
     headline: 'Three directions for designers.',
-    deck: 'Different roles. Different ways to use the same design judgment.',
+    deck: 'You can grow within a team, join one early, or build something of your own.',
     paths: [
       { id: 'company', number: '01', label: 'In-house designer', detail: 'Improve a product with your team.', target: 'path-company' },
       { id: 'founding', number: '02', label: 'Founding designer', detail: 'Shape a product from day one.', target: 'path-founding' },
@@ -551,7 +553,7 @@ export const slides = [
     chapter: 'The future interface',
     eyebrow: 'Looking ahead',
     headline: 'What comes after the app?',
-    deck: 'Conversation. Assistants. Software shaped around one person.',
+    deck: 'We may ask for what we need, let an assistant handle a task, or make a tool of our own.',
     image: 'assets/evidence/future-interface/assistant-reference-ahmad.jpeg',
     notes: [
       'This is a transition into three directions worth watching, not a claim that every app will disappear.',
@@ -655,6 +657,39 @@ export const slides = [
       'Julie Zhuo also built a math and reading app for her children. The stories draw on their real interests and experiences; the children can give feedback about difficulty and request topics. The GIFs are from her original article.',
       'This is a real example of a very small audience shaping the content and experience of software. The broader idea of a travel or food app whose layout users can remake is still speculative, so leave that as a spoken question rather than a factual product example.',
       'Ask the audience what they would change in an app they use every day if it took only a short time to make it fit them.',
+    ],
+  },
+  {
+    id: 'closing',
+    number: '26',
+    type: 'history-teaser',
+    chapter: 'Closing',
+    eyebrow: 'To close',
+    headline: 'The work is still about people.',
+    deck: 'Tools will keep changing. Our job is to make something useful for people.',
+    notes: [
+      'Return to your 15 years of design work: the tools changed many times, but understanding people and choosing a worthwhile problem still took care and judgment.',
+      'Invite the audience to try one small experiment that fits their context rather than trying to learn every tool at once.',
+      'The next slide has four places to continue learning from real work and thoughtful practitioners.',
+    ],
+  },
+  {
+    id: 'resources',
+    number: '27',
+    type: 'resources',
+    chapter: 'Closing',
+    eyebrow: 'Further reading and watching',
+    headline: 'A few places to start.',
+    resources: [
+      { name: 'Julie Zhuo', kind: 'Read', detail: 'Essays on design, management, and personal software.', url: 'https://lg.substack.com/p/i-never-want-to-use-third-party-software' },
+      { name: 'How I AI', kind: 'Watch', detail: 'Claire Vo talks with people about how they use AI at work.', url: 'https://www.youtube.com/@howiaipodcast' },
+      { name: 'Sneak Peek', kind: 'Watch', detail: 'Designers show how their teams actually work.', url: 'https://www.youtube.com/@sneakpeekdesign' },
+      { name: 'UI Collective', kind: 'Watch', detail: 'Practical lessons on UI, design systems, and tools.', url: 'https://www.youtube.com/@UICollectiveDesign' },
+    ],
+    notes: [
+      'Julie Zhuo is the designer and writer behind the personal software examples shown earlier. The link opens the article used in this talk.',
+      'How I AI is Claire Vo’s interview channel. Sneak Peek features walkthroughs of real design-team workflows. UI Collective covers interface design and design systems.',
+      'These are starting points, not a required reading list. Choose the material that helps with a problem you are working on.',
     ],
   },
 ];

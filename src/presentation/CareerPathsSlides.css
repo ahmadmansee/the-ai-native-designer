@@ -28,7 +28,7 @@
 
 /* 17 — One concrete in-house change */
 .career-practice-slide { background: #f8f8f6; }
-.career-work-layout { display: grid; grid-template-columns: minmax(285px, .43fr) minmax(0, .9fr); gap: clamp(42px, 5.2vw, 84px); align-items: center; flex: 1; min-height: 0; }
+.career-work-layout { display: grid; grid-template-columns: minmax(285px, .43fr) minmax(0, .9fr); gap: clamp(42px, 5.2vw, 84px); align-items: center; flex: 1; min-height: 0; margin-top: clamp(20px, 2vw, 32px); }
 .career-work-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: 100%; }
 .career-kicker { color: #87878c; font-size: 12px; }
 .career-work-copy > p { max-width: 470px; margin: 18px 0 0; font-size: clamp(30px, 2.65vw, 42px); line-height: 1.2; letter-spacing: -.035em; }
@@ -39,7 +39,7 @@
 .career-repo-brand img, .career-repo-message img { width: 19px; height: 19px; object-fit: contain; }
 .career-repo-name { color: #343438; font-weight: 600; }
 .career-repo-branch { margin-left: auto; border: 1px solid #dddde0; border-radius: 5px; padding: 5px 8px; color: #73737a; font-size: 11px; }
-.career-repo-body { display: grid; grid-template-columns: minmax(160px, .32fr) minmax(0, 1fr); min-height: 442px; }
+.career-repo-body { display: grid; grid-template-columns: minmax(160px, .32fr) minmax(0, 1fr); min-height: clamp(330px, 27vw, 442px); }
 .career-repo-files { display: flex; flex-direction: column; gap: 20px; border-right: 1px solid #e1e1e3; padding: 28px 24px; background: #f8f8f8; color: #626268; font-size: 13px; }
 .career-repo-files strong { margin-bottom: 7px; color: #89898e; font-size: 11px; letter-spacing: .1em; }
 .career-repo-indent { padding-left: 18px; }
@@ -47,7 +47,7 @@
 .career-repo-tabs { display: flex; gap: 27px; height: 51px; border-bottom: 1px solid #e9e9eb; padding: 0 30px; }
 .career-repo-tabs button { border: 0; border-bottom: 2px solid transparent; padding: 0; background: transparent; color: #8b8b90; font-size: 13px; cursor: pointer; }
 .career-repo-tabs button.is-active { border-color: #242427; color: #242427; font-weight: 650; }
-.career-repo-scene { min-height: 390px; padding: 30px clamp(24px, 3vw, 48px); animation: career-fade .28s ease both; }
+.career-repo-scene { min-height: clamp(279px, 23vw, 390px); padding: 24px clamp(24px, 3vw, 48px); animation: career-fade .28s ease both; }
 .career-repo-message { border-radius: 10px; padding: 17px 20px; }
 .career-repo-message span { display: flex; align-items: center; gap: 7px; color: #77777d; font-size: 10px; font-weight: 700; letter-spacing: .09em; }
 .career-repo-message p { margin: 10px 0 0; font-size: clamp(16px, 1.4vw, 22px); line-height: 1.25; }

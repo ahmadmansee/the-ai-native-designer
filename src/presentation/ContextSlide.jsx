@@ -16,9 +16,9 @@ export function ContextSlide({ slide }) {
           <span className="section-label">{slide.contentsLabel}</span>
           <ol>
             {slide.chapters.map((chapter, index) => (
-              <li key={index}>
-                <span>0{index + 1}</span>
-                <span>{chapter}</span>
+              <li key={chapter.target}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <a href={`#${chapter.target}`}>{chapter.title}<span aria-hidden="true">↗</span></a>
               </li>
             ))}
           </ol>

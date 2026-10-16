@@ -58,9 +58,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .context-statements p + p { margin-top: 17px; color: #6e6e73; }
 .context-contents { padding-top: 30px; }
 .context-contents ol { list-style: none; padding: 0; margin: 20px 0 0; border-top: 1px solid #c8c8cc; }
-.context-contents li { display: grid; grid-template-columns: 72px 1fr; align-items: baseline; gap: 10px; padding: clamp(17px, 1.65vw, 26px) 0; border-bottom: 1px solid #dedee0; }
-.context-contents li span:first-child { color: #1d1d1f; font-size: 15px; font-weight: 600; }
-.context-contents li span:last-child { color: #99999e; font-size: clamp(19px, 1.5vw, 24px); letter-spacing: -.035em; }
+.context-contents li { display: grid; grid-template-columns: 54px 1fr; align-items: baseline; gap: 10px; padding: clamp(12px, 1.2vw, 19px) 0; border-bottom: 1px solid #dedee0; }
+.context-contents li > span { color: #1d1d1f; font-size: 14px; font-weight: 600; }
+.context-contents li > a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; color: #54545a; font-size: clamp(18px, 1.4vw, 22px); letter-spacing: -.035em; text-decoration: none; }
+.context-contents li > a span { flex: none; color: #a1a1a5; font-size: 17px; }
+.context-contents li > a:hover { color: #206068; }
+.context-contents li > a:hover span { color: #206068; }
 
 /* 03 — Section opening */
 .history-teaser-slide { background: #fff; }
