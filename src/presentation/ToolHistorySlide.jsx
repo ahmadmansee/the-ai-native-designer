@@ -7,7 +7,6 @@ export function ToolHistorySlide({ slide }) {
 
   return (
     <SlideFrame slide={slide} className="tools-v2-slide">
-      <span className="section-label">{slide.eyebrow}</span>
       <div className="tools-v2-heading">
         <h2 id={`${slide.id}-title`}>{slide.headline}</h2>
       </div>

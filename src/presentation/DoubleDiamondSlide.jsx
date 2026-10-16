@@ -9,7 +9,6 @@ export function DoubleDiamondSlide({ slide }) {
 
   return (
     <SlideFrame slide={slide} className="diamond-v2-slide">
-      <span className="section-label">{slide.eyebrow}</span>
       <div className="diamond-v2-heading">
         <h2 id={`${slide.id}-title`}>{slide.headline}</h2>
       </div>
@@ -22,7 +21,6 @@ export function DoubleDiamondSlide({ slide }) {
           <h3>{selected.name}</h3>
           <p className="diamond-v2-lead">{selected.lead}</p>
           <div className="diamond-v2-facts">
-            <div><span>With</span><strong>{selected.collaboration}</strong></div>
             <div><span>In the work</span><strong>{selected.work}</strong></div>
           </div>
         </aside>

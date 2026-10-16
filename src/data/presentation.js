@@ -47,7 +47,6 @@ export const slides = [
     number: '03',
     type: 'history-teaser',
     chapter: 'How we got here',
-    eyebrow: '01 / How we got here',
     headline: 'A brief history of design work.',
     deck: 'The process we followed. The tools we used.',
     notes: [
@@ -60,35 +59,30 @@ export const slides = [
     number: '04',
     type: 'double-diamond',
     chapter: 'The design process',
-    eyebrow: 'The Double Diamond',
-    headline: 'How a team moved from problem to product.',
+    headline: 'The Double Diamond framework.',
     stages: [
       {
         id: 'discover',
         name: 'Discover',
         lead: 'Understand the people and the problem.',
-        collaboration: 'Designer + PM + customers',
         work: 'Interviews, evidence, business context',
       },
       {
         id: 'define',
         name: 'Define',
         lead: 'Agree on what to solve first.',
-        collaboration: 'Designer + PM + engineering',
         work: 'Problem framing, roadmap, Jira scope',
       },
       {
         id: 'develop',
         name: 'Develop',
         lead: 'Explore ideas and test the promising ones.',
-        collaboration: 'Designer + researchers + engineers',
         work: 'Exploration, prototypes, user testing',
       },
       {
         id: 'deliver',
         name: 'Deliver',
         lead: 'Test, refine, and prepare for development.',
-        collaboration: 'Designer + PM + engineering',
         work: 'Validation, handoff, release plan',
       },
     ],
@@ -98,7 +92,7 @@ export const slides = [
     },
     notes: [
       'This is the Design Council’s Double Diamond: Discover, Define, Develop, Deliver. It describes divergent and convergent thinking, not a rigid sequence or a complete product lifecycle.',
-      'Move through each stage to show the people and artifacts around the design work. Speak from your own experience: designers worked with PMs, engineers, and researchers throughout the process.',
+      'Move through each stage to show the work involved. Speak from your own experience about collaborating with PMs, engineers, and researchers throughout the process.',
       'Jira and a roadmap are examples of planning artifacts, not required parts of the Double Diamond.',
       'After Deliver, product teams still build, ship, measure outcomes, and learn. Mention that in the spoken story without extending the diagram.',
     ],
@@ -108,8 +102,7 @@ export const slides = [
     number: '05',
     type: 'tool-history',
     chapter: 'The tools',
-    eyebrow: 'The tools',
-    headline: 'The tools we used.',
+    headline: 'Design tools.',
     overview: 'From print and pixels to shared files and code.',
     footnote: 'Dates mark product milestones, not when I used each tool.',
     eras: [
@@ -181,7 +174,7 @@ export const slides = [
     headline: 'The work is changing.',
     deck: 'We can try ideas in a working version much earlier.',
     notes: [
-      'Pause here, as with the earlier Looking back slide. This marks the next section of the talk.',
+      'Pause here, as with the earlier history slide. This marks the next section of the talk.',
       'Introduce the shift in your own words: designers can sometimes work with a functioning version earlier and participate closer to implementation.',
       'The following slide names two related practices. A real project demonstration can follow once Ahmad chooses the example and supplies its footage.',
     ],
