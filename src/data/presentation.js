@@ -376,7 +376,7 @@ export const slides = [
     type: 'history-teaser',
     chapter: 'Reality check',
     headline: 'Reality check.',
-    deck: 'Wanting to try AI at work is not always enough.',
+    deck: 'A useful new tool still needs time, budget, and approval.',
     notes: [
       'This is a pause after the market and FOMO examples. A job ad or a compelling demo does not tell you what is allowed inside your own company.',
       'Speak from experience here. Do not frame limited access as a personal failure or suggest that every company should adopt the same tools.',
@@ -387,27 +387,27 @@ export const slides = [
     number: '15',
     type: 'company-reality',
     chapter: 'Reality check',
-    headline: 'What can stop an AI trial?',
+    headline: 'Why AI isn’t always possible at work.',
     constraints: [
       {
         id: 'budget',
         name: 'Budget',
-        statement: 'We don’t have a budget for it yet.',
+        statement: 'No approved budget for a new tool.',
       },
       {
         id: 'security',
         name: 'Data & security',
-        statement: 'We need an approved service for customer data.',
+        statement: 'Customer data may require an approved service.',
       },
       {
         id: 'systems',
         name: 'Existing systems',
-        statement: 'It may not work with our current systems.',
+        statement: 'Legacy systems may not connect to the new tool.',
       },
       {
         id: 'support',
         name: 'Team support',
-        statement: 'We can’t make time for a trial right now.',
+        statement: 'The team may have other priorities right now.',
       },
     ],
     notes: [
