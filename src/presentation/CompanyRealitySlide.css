@@ -1,13 +1,16 @@
-.company-reality-slide { background: #fafaf8; }
-.company-reality-slide h2 { max-width: 1120px; margin: clamp(23px, 2.8vw, 44px) 0 0; font-size: clamp(55px, 5.6vw, 88px); line-height: 1.03; letter-spacing: -.037em; font-weight: 600; }
-.cr-visual-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: stretch; gap: clamp(8px, 1.4vw, 22px); flex: 1; min-height: 0; margin-top: clamp(22px, 3vw, 48px); }
-.cr-option { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; min-height: 0; border: 0; padding: 0 8px; background: transparent; color: #8d8d91; cursor: pointer; }
-.cr-option strong { display: block; margin-top: 4px; color: inherit; font-size: clamp(18px, 1.65vw, 26px); line-height: 1.15; letter-spacing: -.025em; font-weight: 550; text-align: center; transition: color .25s; }
-.cr-option:hover, .cr-option.is-active { color: #1d1d1f; }
-.cr-option-marker { display: block; width: 24px; height: 2px; margin-top: 16px; background: #d0d0d1; transition: width .25s, background .25s; }
-.cr-option.is-active .cr-option-marker { width: 72px; background: #1d1d1f; }
-.cr-art { display: block; width: min(100%, 225px); max-height: min(23vw, 230px); overflow: visible; transform-origin: 50% 55%; transition: transform .3s, opacity .3s; }
-.cr-option:hover .cr-art, .cr-option.is-active .cr-art { transform: translateY(-5px) scale(1.035); }
+.company-reality-slide { background: #fbfcfb; }
+.company-reality-slide h2 { max-width: 1100px; margin: clamp(32px, 3.4vw, 54px) 0 0; font-size: clamp(55px, 5.15vw, 82px); line-height: 1.04; letter-spacing: -.038em; font-weight: 600; }
+
+/* Version A: four checkpoints between an idea and a trial. */
+.cr-route { display: flex; align-items: center; gap: 22px; margin-top: clamp(30px, 3.6vw, 55px); color: #206068; font-size: clamp(12px, .95vw, 15px); font-weight: 700; letter-spacing: .12em; }
+.cr-route i { display: block; height: 1px; flex: 1; background: linear-gradient(90deg, #18b2a8, #bfd5d4); }
+.cr-visual-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: stretch; gap: clamp(12px, 1.6vw, 26px); flex: 1; min-height: 0; margin-top: 12px; }
+.cr-option { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; min-height: 0; border: 1px solid transparent; border-radius: 18px; padding: 12px; background: transparent; color: #677779; cursor: pointer; transition: border-color .2s ease, background .2s ease, transform .2s ease; }
+.cr-option:hover, .cr-option.is-active { border-color: #c8dedb; background: #eef7f4; color: #173f43; transform: translateY(-3px); }
+.cr-option-number { align-self: flex-start; color: #789294; font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+.cr-option strong { display: block; margin-top: 4px; font-size: clamp(19px, 1.55vw, 25px); line-height: 1.15; letter-spacing: -.025em; font-weight: 600; text-align: center; }
+.cr-art { display: block; width: min(100%, 190px); max-height: min(19vw, 190px); overflow: visible; transform-origin: 50% 55%; transition: transform .25s ease; }
+.cr-option:hover .cr-art, .cr-option.is-active .cr-art { transform: scale(1.045); }
 .cr-art--budget { --cr-halo: #f3e9d8; --cr-accent: #e2ad68; }
 .cr-art--security { --cr-halo: #e4edf0; --cr-accent: #a8c5d2; }
 .cr-art--systems { --cr-halo: #e8ece5; --cr-accent: #aabda3; }
@@ -18,8 +21,45 @@
 .cr-art-stroke { stroke: #29292c; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .cr-art-dashed { stroke: #858589; stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 5 7; }
 .cr-art-keyhole { fill: #29292c; }
-.cr-message { display: flex; align-items: center; flex: none; min-height: 118px; border-top: 1px solid #c6c6c9; padding-top: 19px; }
-.cr-message p { max-width: 830px; margin: 0; font-size: clamp(28px, 2.7vw, 43px); line-height: 1.13; letter-spacing: -.035em; font-weight: 500; animation: focus-in .3s ease both; }
-@media (max-width: 1100px) { .cr-message { min-height: 105px; } .cr-art { width: min(100%, 190px); } }
-@media (max-width: 700px) { .company-reality-slide { min-height: 760px; } .company-reality-slide h2 { margin-top: 40px; font-size: 50px; } .cr-visual-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; } .cr-art { width: min(100%, 150px); max-height: 145px; } .cr-option strong { font-size: 17px; } .cr-option-marker { margin-top: 9px; } .cr-message { min-height: 125px; padding-top: 16px; } .cr-message p { font-size: 27px; } }
+.cr-message { display: grid; grid-template-columns: minmax(175px, .24fr) 1fr; align-items: baseline; gap: 26px; flex: none; min-height: 95px; border-top: 1px solid #cbdcda; padding-top: 18px; }
+.cr-message span { color: #206068; font-size: clamp(15px, 1.15vw, 19px); font-weight: 600; }
+.cr-message p { max-width: 900px; margin: 0; font-size: clamp(25px, 2.4vw, 39px); line-height: 1.13; letter-spacing: -.035em; font-weight: 500; animation: focus-in .3s ease both; }
+
+/* Version B: the same four constraints as a workplace conversation. */
+.cr-conversation-slide h2 { max-width: none; }
+.cr-conversation { display: grid; grid-template-columns: minmax(260px, .47fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 65px); align-items: stretch; flex: 1; min-height: 0; margin-top: clamp(22px, 3vw, 45px); }
+.cr-designer { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-height: 0; padding-bottom: 10px; }
+.cr-designer svg { display: block; width: min(59%, 195px); max-height: 46%; }
+.cr-designer span { margin-top: 8px; color: #206068; font-size: 11px; font-weight: 700; letter-spacing: .13em; }
+.cr-designer p { max-width: 300px; margin: 16px 0 5px; color: #2b4143; font-size: clamp(20px, 1.8vw, 29px); line-height: 1.18; letter-spacing: -.025em; text-align: center; }
+.cr-reply-panel { display: flex; flex-direction: column; min-width: 0; min-height: 0; border: 1px solid #bcd5d1; border-radius: 22px 22px 22px 3px; padding: clamp(22px, 2.4vw, 38px); background: #edf6f3; box-shadow: 0 16px 38px #173f4310; }
+.cr-reply-top { display: flex; justify-content: space-between; color: #547477; font-size: 11px; font-weight: 700; letter-spacing: .1em; }
+.cr-reply-person { display: flex; align-items: center; gap: 13px; margin-top: clamp(16px, 1.5vw, 25px); }
+.cr-reply-person svg { width: clamp(55px, 5vw, 75px); height: clamp(55px, 5vw, 75px); }
+.cr-reply-person strong { color: #206068; font-size: clamp(18px, 1.4vw, 24px); font-weight: 600; }
+.cr-reply-panel blockquote { display: flex; align-items: center; flex: 1; min-height: 0; margin: 10px 0 18px; font-size: clamp(29px, 3.1vw, 51px); line-height: 1.1; letter-spacing: -.04em; font-weight: 550; animation: focus-in .28s ease both; }
+.cr-reply-choices { display: flex; gap: 8px; flex-wrap: wrap; border-top: 1px solid #c2dad6; padding-top: 18px; }
+.cr-reply-choices button { border: 1px solid #b4ceca; border-radius: 999px; padding: 8px 14px; background: #fff; color: #42666a; font-size: clamp(12px, .9vw, 15px); font-weight: 600; cursor: pointer; }
+.cr-reply-choices button:hover, .cr-reply-choices button[aria-pressed="true"] { border-color: #206068; background: #206068; color: #fff; }
+
+@media (max-width: 800px) {
+  .company-reality-slide { min-height: 720px; }
+  .company-reality-slide h2 { margin-top: 30px; font-size: clamp(43px, 7vw, 57px); }
+  .cr-visual-grid { gap: 5px; }
+  .cr-option { padding: 6px 2px; }
+  .cr-art { width: min(100%, 140px); }
+  .cr-option strong { font-size: 16px; }
+  .cr-message { grid-template-columns: 130px 1fr; min-height: 95px; }
+  .cr-message p { font-size: 26px; }
+  .cr-conversation { grid-template-columns: minmax(160px, .4fr) 1fr; gap: 18px; }
+  .cr-designer p { font-size: 18px; }
+  .cr-reply-panel blockquote { font-size: 30px; }
+}
+@media (max-width: 600px) {
+  .cr-visual-grid { grid-template-columns: repeat(2, 1fr); }
+  .cr-art { max-height: 120px; }
+  .cr-message { grid-template-columns: 1fr; gap: 7px; }
+  .cr-conversation { grid-template-columns: 1fr; }
+  .cr-designer { display: none; }
+}
 @media (prefers-reduced-motion: reduce) { .company-reality-slide *, .company-reality-slide *::before, .company-reality-slide *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
