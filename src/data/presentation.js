@@ -123,21 +123,8 @@ export const slides = [
     ],
   },
   {
-    id: 'working-earlier',
-    number: '05',
-    type: 'history-teaser',
-    chapter: 'A new way of working',
-    headline: 'A new way of working',
-    deck: 'We can build and test ideas sooner.',
-    notes: [
-      'Pause here, as with the earlier history slide. This marks the next section of the talk.',
-      'Introduce the shift in your own words: designers can sometimes work with a functioning version earlier and participate closer to implementation.',
-      'The following slide names two related practices. A real project demonstration can follow once Ahmad chooses the example and supplies its footage.',
-    ],
-  },
-  {
     id: 'design-process',
-    number: '06',
+    number: '05',
     type: 'double-diamond',
     chapter: 'The design process',
     headline: 'The Double Diamond framework.',
@@ -176,6 +163,19 @@ export const slides = [
       'Move through each stage to show the work involved. Speak from your own experience about collaborating with PMs, engineers, and researchers throughout the process.',
       'Jira and a roadmap are examples of planning artifacts, not required parts of the Double Diamond.',
       'After Deliver, product teams still build, ship, measure outcomes, and learn. Mention that in the spoken story without extending the diagram.',
+    ],
+  },
+  {
+    id: 'working-earlier',
+    number: '06',
+    type: 'history-teaser',
+    chapter: 'A new way of working',
+    headline: 'A new way of working',
+    deck: 'We can build and test ideas sooner.',
+    notes: [
+      'Pause here, as with the earlier history slide. This marks the next section of the talk.',
+      'Introduce the shift in your own words: designers can sometimes work with a functioning version earlier and participate closer to implementation.',
+      'The following slide names two related practices. A real project demonstration can follow once Ahmad chooses the example and supplies its footage.',
     ],
   },
   {
